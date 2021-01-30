@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root t='150' id='1' V150='13' creationTimestamp='0x177529898be' V1='4' name='RootProduct' incarnation='18'>
+<root t='150' id='1' V150='13' creationTimestamp='0x177529898be' V1='4' name='RootProduct' incarnation='22'>
   <rootElem t='167' id='2' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' avroNamespace='at.tmobile.kafka.saa.product_inventory' V281='13' V1='4' name='RootProduct'>
     <structNode t='150' idref='1'/>
     <child t='167' id='3' V167='21' inheritsFromIncarnation='89' inheritsFromTimestamp='0x177529898d1' inheritsInThisStruct='true' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/saa.resource.product_inventory.root_product/at/tmobile/kafka/saa/product_inventory/ProductInstance.xml' V281='13' V1='4' name='product' checksumValid='true' checksum='aAJOG64tz3ed+mhcaLDLRWUXcgM='>
@@ -21,6 +21,8 @@
     <child t='172' id='9' V172='6' autoFixNamespaceMismatch='true' V170='10' V692='1' V690='1' ignoreExcluded='true' fixInvalidCharacters='true' V1='4' name='XML'>
     </child>
     <child t='177' id='10' V177='1' V170='10' V697='1' V690='1' padOutput='true' ignoreExcluded='true' fixInvalidCharacters='true' V1='4' name='JSON'>
+    </child>
+    <child t='178' id='13' V178='1' V170='10' V698='1' V690='1' padOutput='true' ignoreExcluded='true' fixInvalidCharacters='true' V1='4' name='Map'>
     </child>
   </child>
   <child t='165' id='11' V1='4' name='Document Bindings'>
