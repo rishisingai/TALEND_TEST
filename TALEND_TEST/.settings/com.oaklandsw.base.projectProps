@@ -5,3 +5,7 @@ Namespace Containers,com.oaklandsw.base,order,4
 Reports,com.oaklandsw.base,order,7
 Sample Data,com.oaklandsw.base,order,6
 Structures,com.oaklandsw.base,order,0
+Structures/saa.resource.product_inventory.root_product/at/tmobile/kafka/saa/product_inventory/ProductInstance.xml,com.oaklandsw.base,references.0,Structures/saa.resource.product_inventory.root_product/at/tmobile/kafka/saa/product_inventory/Price.xml,/ProductInstance/productPrices/priceAlterations/price
+Structures/saa.resource.product_inventory.root_product/at/tmobile/kafka/saa/product_inventory/ProductInstance.xml,com.oaklandsw.base,references.1,Structures/saa.resource.product_inventory.root_product/at/tmobile/kafka/saa/product_inventory/Price.xml,/ProductInstance/productPrices/price
+Structures/saa.resource.product_inventory.root_product/at/tmobile/kafka/saa/product_inventory/RootProduct.xml,com.oaklandsw.base,references.0,Structures/saa.resource.product_inventory.root_product/at/tmobile/kafka/saa/product_inventory/ProductInstance.xml,/RootProduct/product
+Structures/saa.resource.product_inventory.root_product/at/tmobile/kafka/saa/product_inventory/RootProduct.xml,com.oaklandsw.base,references.1,Structures/saa.resource.product_inventory.root_product/at/tmobile/kafka/saa/product_inventory/ProductInstance.xml,/RootProduct/childProducts

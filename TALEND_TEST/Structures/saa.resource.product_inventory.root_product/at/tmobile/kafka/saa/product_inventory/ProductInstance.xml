@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root t='150' id='1' V150='13' creationTimestamp='0x177529898d1' V1='4' name='ProductInstance' incarnation='89'>
+  <rootElem t='167' id='2' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' avroNamespace='at.tmobile.kafka.saa.product_inventory' V281='13' V1='4' name='ProductInstance'>
+    <structNode t='150' idref='1'/>
+    <child t='167' id='3' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='id' description='Identifier of the root product instance (HAL group = &apos;bundle&apos; or &apos;tariff&apos;)'>
+      <structNode t='150' idref='1'/>
+    </child>
+    <child t='167' id='4' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='status' description='Product instance status (Created, Aborted, Cancelled, Active, Terminated, Inactive, Suspended, Pending_active, Pending_terminate, Pending_tariff_change, Pending_reactivation)'>
+      <structNode t='150' idref='1'/>
+    </child>
+    <child t='167' id='5' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='group' description='Values: &apos;bundle&apos;, &apos;tariff&apos;, &apos;addon&apos;, &apos;VAS&apos;, &apos;service&apos;, &apos;device&apos;, &apos;SIM&apos;, &apos;fixedConnection&apos;, &apos;number&apos;, &apos;deliveryMethod&apos;, &apos;installationMethod&apos;'>
+      <structNode t='150' idref='1'/>
+    </child>
+    <child t='167' id='6' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='13' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='startDate' description='The date when the product starts. From this point on the product can be used. In case of a hardbundle: date when all components of the bundle can be used (= start of billing)'>
+      <structNode t='150' idref='1'/>
+    </child>
+    <child t='167' id='7' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='13' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='orderDate' description='The date when the product was ordered by agent or customer.'>
+      <structNode t='150' idref='1'/>
+    </child>
+    <child t='167' id='8' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='13' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='expirationDate' description='The date when the product will expire. Can be used for onetime booster.'>
+      <structNode t='150' idref='1'/>
+    </child>
+    <child t='167' id='9' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='13' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='reactivationDate' description='The date when the product was reactivated after dunning termination or suspension.'>
+      <structNode t='150' idref='1'/>
+    </child>
+    <child t='167' id='10' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='13' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='terminationDate' description='The date when the product was terminated.'>
+      <structNode t='150' idref='1'/>
+    </child>
+    <child t='167' id='11' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' avroName='ProductOfferingRef' V281='13' V1='4' name='productOffering'>
+      <structNode t='150' idref='1'/>
+      <child t='167' id='12' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='id' description='Reference to product offering specification from enterprise product catalog.'>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='13' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='name' description='Name of product offering specification from enterprise product catalog.'>
+        <structNode t='150' idref='1'/>
+      </child>
+    </child>
+    <child t='167' id='14' V167='21' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' avroName='ProductCharacteristic' V281='13' V1='4' name='productCharacteristics'>
+      <structNode t='150' idref='1'/>
+      <child t='167' id='15' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='name'>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='16' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='value'>
+        <structNode t='150' idref='1'/>
+      </child>
+    </child>
+    <child t='167' id='17' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' avroName='ProductRelationship' V281='13' V1='4' name='productRelationships'>
+      <structNode t='150' idref='1'/>
+      <child t='167' id='18' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='id' description='Identifier of the related product instance'>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='19' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='type' description='Type of the relationship, e.g. bundles (parent → child), isBundleOf (child → parent), isParentOf (parent → child), isChildOf (child → parent), contains (parent → child), includes (parent → child), dependsOn (child → parent)'>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='20' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='name' description='Name of the related product offering specification from enterprise product catalog.'>
+        <structNode t='150' idref='1'/>
+      </child>
+    </child>
+    <child t='167' id='21' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' avroName='CustomerRef' V281='13' V1='4' name='customer'>
+      <structNode t='150' idref='1'/>
+      <child t='167' id='22' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='id' description='Identifier to contract owner (PCM.CONTACT_SADA_UUID)'>
+        <structNode t='150' idref='1'/>
+      </child>
+    </child>
+    <child t='167' id='23' V167='21' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' avroName='ProductToAccountRef' V281='13' V1='4' name='accounts'>
+      <structNode t='150' idref='1'/>
+      <child t='167' id='24' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='id' description='Identifier of customer account (PCM.GROUP_SADA_UUID)'>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='25' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='accountType' description='Values: &apos;customer&apos;'>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='26' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='role' description='Values: &apos;parent&apos;'>
+        <structNode t='150' idref='1'/>
+      </child>
+    </child>
+    <child t='167' id='27' V167='21' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' avroName='ProductPrice' V281='13' V1='4' name='productPrices' checksumValid='true' checksum='e+4Xi4vu/ac6OQOdSRG4oaPHmFc='>
+      <structNode t='150' idref='1'/>
+      <child t='167' id='28' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='id' description='Identifier of product offering price entity in enterprise product catalog.'>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='29' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='name' description='Name of product offering price entity in enterprice product catalog (it is a data replicate; stays untouched even if the value is changed in the master application).'>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='30' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='version' description='Version of product offering price entity in enterprise product catalog.'>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='31' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='priceType' description='Used to indicate price. Values: &apos;recurringFee&apos;, &apos;discount&apos;, &apos;penalty&apos;'>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='32' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='recurringChargePeriod' description='Charge period. Values: &apos;min&apos;, &apos;hour&apos;, &apos;day&apos;, &apos;week&apos;, &apos;month&apos;, &apos;quartal&apos;, &apos;year&apos;'>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='33' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='recurringChargeDuration' description='1 means every recurringChargePeriod, 2 means every second recurringChargePeriod, etc.'>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='34' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='recurringChargeOccurrence' description='Number of occurrences. -1 means unlimited, 1 means onetime, 2 means twice, etc.'>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='35' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' avroName='TimePeriodProductPrice' V281='13' V1='4' name='validFor'>
+        <structNode t='150' idref='1'/>
+        <child t='167' id='36' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='13' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='startDateTime' description='Start of charge'>
+          <structNode t='150' idref='1'/>
+        </child>
+        <child t='167' id='37' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='13' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='endDateTime' description='End of charge. Makes only sense in case of unlimited occurence.'>
+          <structNode t='150' idref='1'/>
+        </child>
+      </child>
+      <child t='167' id='38' V167='21' inheritsFromIncarnation='11' inheritsFromTimestamp='0x177529898e2' inheritsInThisStruct='true' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/saa.resource.product_inventory.root_product/at/tmobile/kafka/saa/product_inventory/Price.xml' V281='13' V1='4' name='price'>
+        <structNode t='150' idref='1'/>
+        <savedDerivedCopy t='167' id='39' V167='21' needInheritInit='true' inheritsInThisStruct='true' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/saa.resource.product_inventory.root_product/at/tmobile/kafka/saa/product_inventory/Price.xml' V281='13' V1='4' name='price'>
+        </savedDerivedCopy>
+      </child>
+      <child t='167' id='40' V167='21' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' avroName='ProductPriceAlteration' V281='13' V1='4' name='priceAlterations' checksumValid='true' checksum='hUVuyKEntjjsuF8WBpztMimlfW0='>
+        <structNode t='150' idref='1'/>
+        <child t='167' id='41' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='id' description='Identifier of product offering price entity in enterprise product catalog.'>
+          <structNode t='150' idref='1'/>
+        </child>
+        <child t='167' id='42' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='label' description='Price label, used for screen presentation (it is a data replicate; stays untouched even if the value is changed in the master application).'>
+          <structNode t='150' idref='1'/>
+        </child>
+        <child t='167' id='43' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='version' description='Version of product offering price entity in enterprise product catalog.'>
+          <structNode t='150' idref='1'/>
+        </child>
+        <child t='167' id='44' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='priceType' description='Used to indicate price. Values: &apos;recurringFee&apos;, &apos;discount&apos;, &apos;penalty&apos;'>
+          <structNode t='150' idref='1'/>
+        </child>
+        <child t='167' id='45' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='recurringChargePeriod' description='Charge period. Values: &apos;min&apos;, &apos;hour&apos;, &apos;day&apos;, &apos;week&apos;, &apos;month&apos;, &apos;quartal&apos;, &apos;year&apos;'>
+          <structNode t='150' idref='1'/>
+        </child>
+        <child t='167' id='46' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='recurringChargeDuration' description='1 means every recurringChargePeriod, 2 means every second recurringChargePeriod, etc.'>
+          <structNode t='150' idref='1'/>
+        </child>
+        <child t='167' id='47' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='recurringChargeOccurrence' description='Number of occurrences. -1 means unlimited, 1 means onetime, 2 means twice, etc.'>
+          <structNode t='150' idref='1'/>
+        </child>
+        <child t='167' id='48' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' avroName='TimePeriodProductPriceAlteration' V281='13' V1='4' name='validFor'>
+          <structNode t='150' idref='1'/>
+          <child t='167' id='49' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='13' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='startDateTime' description='Start of charge'>
+            <structNode t='150' idref='1'/>
+          </child>
+          <child t='167' id='50' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='13' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='endDateTime' description='End of charge. Makes only sense in case of unlimited occurence.'>
+            <structNode t='150' idref='1'/>
+          </child>
+        </child>
+        <child t='167' id='51' V167='21' inheritsFromIncarnation='11' inheritsFromTimestamp='0x177529898e2' inheritsInThisStruct='true' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/saa.resource.product_inventory.root_product/at/tmobile/kafka/saa/product_inventory/Price.xml' V281='13' V1='4' name='price'>
+          <structNode t='150' idref='1'/>
+          <savedDerivedCopy t='167' id='52' V167='21' needInheritInit='true' inheritsInThisStruct='true' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/saa.resource.product_inventory.root_product/at/tmobile/kafka/saa/product_inventory/Price.xml' V281='13' V1='4' name='price'>
+          </savedDerivedCopy>
+        </child>
+        <child t='167' id='53' V167='21' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' avroName='PriceCharacteristic' V281='13' V1='4' name='characteristics'>
+          <structNode t='150' idref='1'/>
+          <child t='167' id='54' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='name'>
+            <structNode t='150' idref='1'/>
+          </child>
+          <child t='167' id='55' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='value'>
+            <structNode t='150' idref='1'/>
+          </child>
+        </child>
+      </child>
+    </child>
+    <child t='167' id='56' V167='21' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' avroName='Agreement' V281='13' V1='4' name='agreements'>
+      <structNode t='150' idref='1'/>
+      <child t='167' id='57' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='id'>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='58' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='status' description='validated, initialized, inProgress, pendingUpdate, rejected; States are only used when an approval process is necessary (e.g. credit check)'>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='59' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='13' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='initialDate' description='Date at which the agreement was initialized'>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='60' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='13' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='completionDate' description='Date at which the agreement was validated.'>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='61' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' avroName='TimePeriodAgreement' V281='13' V1='4' name='agreementPeriod'>
+        <structNode t='150' idref='1'/>
+        <child t='167' id='62' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='13' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='startDateTime' description='Date at which the agreement starts. At that point in time also distance selling period and warranty claim starts.'>
+          <structNode t='150' idref='1'/>
+        </child>
+        <child t='167' id='63' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='13' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='endDateTime' description='Date at which the agreement ends. This can be the same date when the product terminates or earlier in case of contract prolongation which leads to end the current agreement and creation of a new agreement.'>
+          <structNode t='150' idref='1'/>
+        </child>
+      </child>
+      <child t='167' id='64' V167='21' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' avroName='Attachment' V281='13' V1='4' name='attachments'>
+        <structNode t='150' idref='1'/>
+        <child t='167' id='65' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='id' description='Identifier document management system'>
+          <structNode t='150' idref='1'/>
+        </child>
+        <child t='167' id='66' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='name' description='Name of the attachment'>
+          <structNode t='150' idref='1'/>
+        </child>
+        <child t='167' id='67' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='type' description='Values: &apos;CONTRACT&apos;, &apos;AGB_BVB&apos;, &apos;AEB&apos;'>
+          <structNode t='150' idref='1'/>
+        </child>
+        <child t='167' id='68' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='mimeType' description='List of possible mime types https://www.freeformatter.com/mime-types-list.html'>
+          <structNode t='150' idref='1'/>
+        </child>
+      </child>
+      <child t='167' id='69' V167='21' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' avroName='AgreementItem' V281='13' V1='4' name='agreementItems'>
+        <structNode t='150' idref='1'/>
+        <child t='167' id='70' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='id' description='Identifier of the product offering term characteristic from enterprise product catalog.'>
+          <structNode t='150' idref='1'/>
+        </child>
+        <child t='167' id='71' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' avroName='TimePeriodAgreementItems' V281='13' V1='4' name='validFor'>
+          <structNode t='150' idref='1'/>
+          <child t='167' id='72' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='13' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='startDateTime'>
+            <structNode t='150' idref='1'/>
+          </child>
+          <child t='167' id='73' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='13' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='endDateTime'>
+            <structNode t='150' idref='1'/>
+          </child>
+        </child>
+        <child t='167' id='74' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='name'>
+          <structNode t='150' idref='1'/>
+        </child>
+        <child t='167' id='75' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='termType' description='Values: &apos;bindingPeriod&apos;, &apos;trialPeriod&apos;'>
+          <structNode t='150' idref='1'/>
+        </child>
+      </child>
+    </child>
+    <child t='167' id='76' V167='21' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' avroName='RealizingResourceRef' V281='13' V1='4' name='realizingResources'>
+      <structNode t='150' idref='1'/>
+      <child t='167' id='77' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='id' description='Identifier from resource inventory.'>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='78' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='name'>
+        <structNode t='150' idref='1'/>
+      </child>
+    </child>
+    <child t='167' id='79' V167='21' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' avroName='RealizingServiceRef' V281='13' V1='4' name='realizingServices'>
+      <structNode t='150' idref='1'/>
+      <child t='167' id='80' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='id' description='Identifier from service inventory.'>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='81' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='name'>
+        <structNode t='150' idref='1'/>
+      </child>
+    </child>
+    <child t='167' id='82' V167='21' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' avroName='ProductOrderRef' V281='13' V1='4' name='orderRefs'>
+      <structNode t='150' idref='1'/>
+      <child t='167' id='83' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='id' description='Identifier of product order'>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='84' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='orderItemId' description='Identifier of the order item where the product was managed'>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='85' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='orderItemAction' description='Action of the order item for this product'>
+        <structNode t='150' idref='1'/>
+      </child>
+      <child t='167' id='86' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='13' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='orderDate' description='The date when the order was created.'>
+        <structNode t='150' idref='1'/>
+      </child>
+    </child>
+  </rootElem>
+  <child t='162' id='87' V1='4' name='Representations'>
+  </child>
+  <child t='165' id='88' V1='4' name='Document Bindings'>
+    <child t='166' id='89' V166='5' docType='1' V1='4' name='/ProductInstance'>
+      <elemNode t='167' idref='2'/>
+    </child>
+  </child>
+</root>
