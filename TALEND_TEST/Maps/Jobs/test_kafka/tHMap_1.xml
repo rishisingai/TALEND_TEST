@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root t='190' id='1' V190='11' inStruct='Structures/saa.resource.product_inventory.root_product/at/tmobile/kafka/saa/product_inventory/RootProduct.xml' outStruct='Structures/saa.resource.product_inventory.root_product/at/tmobile/kafka/saa/product_inventory/RootProduct.xml' inputRep='179' outputRep='179' nextMap='' inputStructUserName='RootProduct' outputStructUserName='RootProduct' V1='4' name='tHMap_1' incarnation='2743'>
+<root t='190' id='1' V190='11' inStruct='Structures/saa.resource.product_inventory.root_product/at/tmobile/kafka/saa/product_inventory/RootProduct.xml' outStruct='Structures/saa.resource.product_inventory.root_product/at/tmobile/kafka/saa/product_inventory/RootProduct.xml' inputRep='179' outputRep='178' nextMap='' inputStructUserName='RootProduct' outputStructUserName='RootProduct' V1='4' name='tHMap_1' incarnation='2744'>
   <inputMapElem t='200' id='2' V200='8' input='true' rowElem='true' structElemExists='true' usedCount='3' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' avroNamespace='at.tmobile.kafka.saa.product_inventory' V281='13' V1='4' name='RootProduct'>
     <mapNode t='190' idref='1'/>
     <child t='200' id='3' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='Structures/saa.resource.product_inventory.root_product/at/tmobile/kafka/saa/product_inventory/ProductInstance.xml' V281='13' V1='4' name='product'>
@@ -1101,7 +1101,8 @@
   </outputMapElem>
   <inputRepRuntime t='699' id='368' V699='1' avroNamespace='at.tmobile.kafka.saa.product_inventory' V690='1' rowElemPath='/RootProduct'>
   </inputRepRuntime>
-  <outputRepRuntime t='699' idref='368'/>
+  <outputRepRuntime t='698' id='374' V698='1' V690='1' padOutput='true'>
+  </outputRepRuntime>
   <valueSets></valueSets>
   <inputXmlRepRuntime t='692' id='369' V692='1' V690='1'>
   </inputXmlRepRuntime>
