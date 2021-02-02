@@ -13,6 +13,7 @@
     <module>jobs/process/test_kafka_0.1</module>
     <module>jobs/process/newjob_0.1</module>
     <module>jobs/process/newjob1_0.1</module>
+    <module>jobs/process/lllll_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
